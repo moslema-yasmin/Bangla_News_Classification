@@ -1,2 +1,19 @@
-# Bangla_News_Classification
-Document fragmentation, a classification problem by nature, is an exciting aspect of natural language processing (NLP) that includes a wide range of real-world applications such as emotional analysis, spam detection, rating scale, e-commerce, online library management, and so on. Recently many researchers have worked on this topic. We believe there is much work to be done. We also realized that if we include more people in this article we will get to our destination faster. So, we are here to do our job. Here we have used 19k newsletters as our training data is set. Bangla, also known as Bengali, is one of the most widely spoken languages ​​in the world. Therefore, with a large number of internet users using Bangla as their native language, almost all types of digital texts such as blog posts, newspaper articles, social media posts are growing exponentially across the web. After all, the importance of Bengali's automatic textual fragmentation becomes an important issue to consider. Various methods of classification of Bengali texts have been suggested in recent studies. From now on, in this project, a program that contains a Machine Learning Model with Term Frequency-Inverse Document Frequency (TF-IDF) is a feature selection process designed to aim to differentiate Bengali text texts. However, a comparative analysis between the proposed model and other well-established methods can help to better understand the performance of the model according to the Bangla text categories. Therefore, the nine tests were designed for two different method selection factors (TF-IDF and embedding) for testing and then performed by the PCA to remove unnecessary data from the extracted object. Finally a performance test for this project.
+# Bengali Document Classfication Overview
+* Created a tool that can categorizes the Bengali news articles into 5 diffferent class (Economics', 'Entertainment', 'International', 'Science and Technology', 'Sports') using Machine Learning.
+* A publicly available dataset of 500 news articles is used to develop the system. The dataset consist 5 different categories news articles.
+* Naive Bayes Classifier and SVM(Support Vector Machine) are used for Machine Learning
+* The model performance is evaluated using various evaluation measures such as confusion matrix, accuracy , precision, recall and f1-score.
+# Resources Used
+* Developement Envioronment : Spyder
+* Python Version : 3.8
+* Packages : Tensorflow 2.6.0, Keras, Scikit-Learn, Pandas
+# How to run
+> Download the .py and .csv files and please them into a same folder and run the .py file using IDE(Spyder or else)
+# Challenge and Threat
+* TensorFlow Module didn't default install in Anaconda. We try to automatically install it from the python script. But it can faild. Then to install namually by using this command in Spyder console !pip3 install tensorflow
+
+
+# Output
+
+> ![output1](https://user-images.githubusercontent.com/58563430/134735024-2791b640-bd0a-489c-915a-0cd861d0c390.PNG)
+> ![output2](https://user-images.githubusercontent.com/58563430/134735090-e3db9005-15da-431d-948e-c5c1d3e7738a.PNG)
