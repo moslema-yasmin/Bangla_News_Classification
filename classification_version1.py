@@ -46,7 +46,7 @@ except ImportError:
   # -- if all went well, import required module again ( for global access)
 #import keras
 """
-Here we read the dataset using load_files and store in reviews. After that we store the news in X and label in y.
+Here we read the dataset. After that we store the news in X and label in y.
 """
 dataset = pd.read_csv("news500.csv")
 X,y= dataset['News'],dataset['Label']
