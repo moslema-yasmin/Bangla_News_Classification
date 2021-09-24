@@ -10,8 +10,16 @@
 # How to run
 > Download the .py and .csv files and please them into a same folder and run the .py file using IDE(Spyder or else)
 # Challenge and Threat
-* TensorFlow Module didn't default install in Anaconda. We try to automatically install it from the python script. But it can faild. Then to install namually by using this command in Spyder console !pip3 install tensorflow
-
+* TensorFlow Module isn't installed by default in Anaconda. We try to automatically install it from the python script. But it can field. Then to install manually by using this command in the Spyder console:       `!pip3 install tensorflow`
+* Like TensorFlow Module, for Keras Module use   `!pip3 install keras`   command in Spyder console if it isn't install automatically.
+# Workflow
+* At first we import all the module
+* After that we read the csv file using `pandas.read_csv()`
+* Pre-Processing Dataset(Cleaning the stopwords and punctuation from the news)
+* Creating the BOW model using tokenizer
+* Splitting the dataset into the Training set and Test set
+* Training the naive_bayes classifier and then test the model
+* Training the SVM and then test the model
 
 # Output
 
