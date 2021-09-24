@@ -6,8 +6,8 @@ Created on Thu Sep 23 19:56:30 2021
 """
 
 #At First We Import All the Needed Module
-from sklearn.datasets import load_files
 #import numpy as np
+import pandas as pd
 from sklearn.metrics import confusion_matrix,classification_report,accuracy_score
 import os
 
@@ -48,9 +48,9 @@ except ImportError:
 """
 Here we read the dataset using load_files and store in reviews. After that we store the news in X and label in y.
 """
-path = os.path.abspath("news500")
-reviews = load_files(path+'/')
-X,y = reviews.data,reviews.target
+dataset = pd.read_csv("news500.csv")
+X,y= dataset['News'],dataset['Label']
+
 
 #Here we declar the the stopwords and the punctuation
 #print (X[0].decode('utf-8'))
@@ -63,7 +63,7 @@ dataset=[]
 
 #Pre-Processing Dataset(Cleaning the stopwords and punctuation from the news) 
 for i in range(0,len(X)):
-        words = nltk.word_tokenize(X[i].decode('utf-8'))
+        words = nltk.word_tokenize(X[i])
         
         X[i]=""
         #docset=[]
