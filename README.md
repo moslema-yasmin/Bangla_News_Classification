@@ -10,8 +10,8 @@
 # How to run
 > Download the .py and .csv files and please them into a same folder and run the .py file using IDE(Spyder or else)
 # Challenge and Threat
-* TensorFlow Module isn't installed by default in Anaconda. We try to automatically install it from the python script. But it can field. Then to install manually by using this command in the Spyder console:       `!pip3 install tensorflow`
-* Like TensorFlow Module, for Keras Module use   `!pip3 install keras`   command in Spyder console if it isn't install automatically.
+* TensorFlow Module isn't installed by default in Anaconda. We try to automatically install it from the python script. But it can field. Then to install manually by using this command in the Spyder console:       `!pip install tensorflow`
+* Like TensorFlow Module, for Keras Module use   `!pip install keras`   command in Spyder console if it isn't install automatically.
 # Workflow
 * At first we import all the module
 * After that we read the csv file using `pandas.read_csv()`
